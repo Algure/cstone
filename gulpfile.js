@@ -94,6 +94,7 @@ var config = {
     },
     ghostMode: false, // By setting true, clicks, scrolls and form inputs on any device will be mirrored to all others
     notify: false,
+    open: false
     
 };
 
@@ -101,7 +102,7 @@ var config = {
 
 // Start the server
 gulp.task('webserver', function () {
-    webserver(config);
+    webserver.init(config);
 });
 
 // Compile html
