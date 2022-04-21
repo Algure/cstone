@@ -444,3 +444,9 @@ gulp.task('default', gulp.series(
     'build:dist',
     gulp.parallel('webserver','watch')
 ));
+
+// Start server
+gulp.task('webserver', function(){
+  webserver.init();
+});
+
