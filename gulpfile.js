@@ -101,7 +101,7 @@ var config = {
 
 // Start the server
 gulp.task('webserver', function () {
-    webserver.init(config);
+    webserver(config);
 });
 
 // Compile html
